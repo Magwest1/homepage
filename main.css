@@ -44,6 +44,12 @@ a {
     text-decoration: inherit; /* no underline */
 }
 
+.minecraft {
+    cursor: pointer;
+    margin-left: 24px;
+    user-select: none;
+}
+
 
 @keyframes grow {
     from {transform: scale(1.0);}

@@ -22,9 +22,35 @@
                 <a href="http://eurovote.no" class="anker_element">Eurovote</a>
             </div>
             <div class=list_element>
+                <a href="https://feedn.no" class="anker_element">Feedn</a>
+            </div>
+            <div class=list_element>
+                <a href="https://bedpressbingo.no" class="anker_element">Bingo</a>
+            </div>
+            <div class="list_element minecraft" id="minecraft" style="display: block;" onclick="mcToClipboard()">
+                Minecraft
+                <img src="/assets/content_paste-24px.svg" alt="">
+            </div>
+            <div class=list_element>
+                <a href="https://github.com/Magwest1" class="anker_element">GitHub</a>
+            </div>
+            <div class=list_element>
                 <a href="" class="anker_element">Login</a>
             </div>
         </div>
     </div>
 </body>
+<script>
+    window.onload = function() {
+        if (navigator.userAgent.match(/(iPad|iPhone|iPod|android)/i)) {
+            document.getElementById("minecraft").style.display = "none";
+        }
+    }
+
+    function mcToClipboard() {
+        navigator.clipboard.writeText("mc.magnusolstad.no");
+        alert("Server adress added to clipboard");
+
+    }
+</script>
 </html>
