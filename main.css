@@ -1,0 +1,56 @@
+body{
+    font-family: 'Exo', sans-serif;
+    font-weight: 100;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #222;
+    color: #222;
+}
+
+.centered{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.list_element{
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    font-size: 50px;
+    /*animation: shrink;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;*/
+    transition-duration: 1s;
+}
+
+.list_element:hover {
+    transform: scale(1.1);
+    
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+
+@keyframes grow {
+    from {transform: scale(1.0);}
+    to {transform: scale(1.2);}
+}
+
+@keyframes shrink {
+    0% {transform: scale(1.2);}
+    100% {transform: scale(1.0);}
+}
